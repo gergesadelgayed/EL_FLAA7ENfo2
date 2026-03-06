@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EL FLA7EN | Achievements</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="cursor"></div>
+<div id="cursor-dot"></div>
+<canvas id="bgCanvas" style="position:fixed;inset:0;pointer-events:none;z-index:0;opacity:0.28;width:100%;height:100%;"></canvas>
+
+<div id="intro">
+  <div class="i-scanbar"></div>
+  <canvas id="intro-mat" style="position:absolute;inset:0;width:100%;height:100%;opacity:0.28;"></canvas>
+  <div class="i-scan"></div>
+  <div class="i-wrap">
+    <div class="i-term" id="intro-terminal"></div>
+    <div class="i-prog"><div class="i-bar"></div></div>
+    <div class="i-logo"><span class="lr">EL</span> <span class="lg">FLA7EN</span></div>
+    <div class="i-sub">Elite Cyber Security Unit</div>
+    <div class="i-loc">📍 Luxor — Egypt</div>
+    <div class="i-access">[ ACCESS GRANTED ]</div>
+  </div>
+  <div class="i-skip" id="intro-skip">SKIP ▶</div>
+</div>
+
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">EL<span class="sep">_</span>FLA7EN<span class="lx">://SEC</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="team.html">Team</a></li>
+    <li><a href="legendary.html">Legendary</a></li>
+    <li><a href="writeups.html">Writeups</a></li>
+    <li><a href="achievements.html" class="active">Achievements</a></li>
+    <li><a href="https://wa.me/201225346232" target="_blank" class="nav-join">⚡ JOIN EL FLA7EN</a></li>
+  </ul>
+  <button class="nav-toggle"><span></span><span></span><span></span></button>
+</nav>
+
+<main>
+  <div class="page-hero">
+    <div class="pg-grid"></div>
+    <h1 class="pg-title"><span class="hr">ACHIEVE</span><span class="hg">MENTS</span></h1>
+    <p class="pg-sub">// OPERATIONS LOG // CYBER MISSIONS // MILESTONES //</p>
+    <div class="pg-line"></div>
+  </div>
+
+  <section class="section" style="padding-top:1.5rem;">
+    <div class="section-inner">
+
+      <div class="stats-bar">
+        <div class="sb reveal" style="--sc:#00ff9c;"><span class="sb-num counter" data-target="30">0</span><span class="sb-lbl">CTF Challenges</span></div>
+        <div class="sb reveal" style="--sc:#ff2244;"><span class="sb-num counter" data-target="8">0</span><span class="sb-lbl">Competitions</span></div>
+        <div class="sb reveal" style="--sc:#00f0ff;"><span class="sb-num counter" data-target="5">0</span><span class="sb-lbl">Writeups</span></div>
+        <div class="sb reveal" style="--sc:#3a6aff;"><span class="sb-num counter" data-target="6">0</span><span class="sb-lbl">Operators</span></div>
+        <div class="sb reveal" style="--sc:#00ff66;"><span class="sb-num counter" data-target="4">0</span><span class="sb-lbl">Domains</span></div>
+      </div>
+
+      <div class="s-head reveal">
+        <span class="s-tag tg">// Operations Log</span>
+        <h2 class="s-title">Mission <span class="hg">Timeline</span></h2>
+        <div class="s-line"></div>
+      </div>
+
+      <div class="tl">
+        <div class="tl-item" style="--nc:#00ff9c;">
+          <div class="tl-node"></div>
+          <div class="tl-box">
+            <div class="tl-yr">2024 // OPERATION: GENESIS</div>
+            <span class="tl-icon">⚡</span>
+            <div class="tl-title">EL FLA7EN Unit Established</div>
+            <p class="tl-desc">Six cyber security students at FCI LUXOR united to form EL FLA7EN. Team formation, role assignments, and operational protocols established for CTF and training campaigns.</p>
+            <span class="tl-badge tb-g">MILESTONE</span>
+          </div>
+        </div>
+        <div class="tl-item" style="--nc:#ff2244;">
+          <div class="tl-node"></div>
+          <div class="tl-box">
+            <div class="tl-yr">2024 // OPERATION: DEBUT</div>
+            <span class="tl-icon">🏆</span>
+            <div class="tl-title">AC3 CTF — First Competitive Mission</div>
+            <p class="tl-desc">EL FLA7EN's debut in AC3 CTF. Team tackled Web Security, Digital Forensics, and OSINT challenges. First competitive benchmark as a unified cyber unit.</p>
+            <span class="tl-badge tb-r">CTF COMPETITION</span>
+          </div>
+        </div>
+        <div class="tl-item" style="--nc:#00f0ff;">
+          <div class="tl-node"></div>
+          <div class="tl-box">
+            <div class="tl-yr">2024 // OPERATION: EXCAVATE</div>
+            <span class="tl-icon">🔬</span>
+            <div class="tl-title">Digital Forensics Training Campaign</div>
+            <p class="tl-desc">Intensive DFIR training: Volatility memory forensics, disk image analysis, Wireshark network investigation, and digital evidence chain-of-custody protocols.</p>
+            <span class="tl-badge tb-c">TRAINING</span>
+          </div>
+        </div>
+        <div class="tl-item" style="--nc:#3a6aff;">
+          <div class="tl-node"></div>
+          <div class="tl-box">
+            <div class="tl-yr">2024 // OPERATION: SPIDER</div>
+            <span class="tl-icon">🌐</span>
+            <div class="tl-title">Web Security Lab Series</div>
+            <p class="tl-desc">Hands-on web exploitation labs: SQL injection, XSS, SSRF, IDOR, and authentication bypass. Multiple PortSwigger Academy modules completed by all team members.</p>
+            <span class="tl-badge tb-b">TRAINING</span>
+          </div>
+        </div>
+        <div class="tl-item" style="--nc:#00ff66;">
+          <div class="tl-node"></div>
+          <div class="tl-box">
+            <div class="tl-yr">2024 // OPERATION: PHANTOM</div>
+            <span class="tl-icon">🔍</span>
+            <div class="tl-title">OSINT Investigation Exercises</div>
+            <p class="tl-desc">Advanced OSINT exercises: geo-location challenges, social media analysis, username enumeration, and target profiling simulations completed as a coordinated unit.</p>
+            <span class="tl-badge tb-g">OSINT OPS</span>
+          </div>
+        </div>
+        <div class="tl-item" style="--nc:#4488ff;">
+          <div class="tl-node"></div>
+          <div class="tl-box">
+            <div class="tl-yr">2024 // OPERATION: INK</div>
+            <span class="tl-icon">📝</span>
+            <div class="tl-title">First Official Writeups Published</div>
+            <p class="tl-desc">EL FLA7EN published its first technical CTF writeups — documenting challenge solutions and methodologies. Contributing to the Egyptian cyber security community.</p>
+            <span class="tl-badge tb-c">PUBLICATION</span>
+          </div>
+        </div>
+        <div class="tl-item" style="--nc:#ff2244;">
+          <div class="tl-node"></div>
+          <div class="tl-box">
+            <div class="tl-yr">2024–2025 // OPERATION: ASCEND</div>
+            <span class="tl-icon">📈</span>
+            <div class="tl-title">Multi-Platform CTF Campaign — ONGOING</div>
+            <p class="tl-desc">Sustained participation across PicoCTF, HackTheBox, TryHackMe, and CTFtime. 30+ challenges solved in Web, Forensics, Crypto, and Misc. Unit ranking continuously improving.</p>
+            <span class="tl-badge tb-r">ONGOING</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta reveal" style="margin-top:3rem;">
+        <div class="cta-title">NEXT <span class="cr">MISSION</span> INCOMING</div>
+        <p class="cta-sub">The next chapter is being written — will your name be in it?</p>
+        <a href="https://wa.me/201225346232" target="_blank" class="btn btn-wa" style="font-size:0.85rem;padding:13px 34px;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          JOIN EL FLA7EN — Contact Leader on WhatsApp
+        </a>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span class="ft-logo">EL_FLA7EN://SEC</span>
+  <div class="ft-divider"></div>
+  <span class="ft-copy">© 2024 EL FLA7EN Cyber Security Team — FCI LUXOR, EGYPT</span>
+  <span class="ft-credit">web made by gerges adel</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

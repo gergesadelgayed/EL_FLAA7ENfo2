@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EL FLA7EN | Cyber Writeups Library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="cursor"></div>
+<div id="cursor-dot"></div>
+<canvas id="bgCanvas" style="position:fixed;inset:0;pointer-events:none;z-index:0;opacity:0.28;width:100%;height:100%;"></canvas>
+
+<div id="intro">
+  <div class="i-scanbar"></div>
+  <canvas id="intro-mat" style="position:absolute;inset:0;width:100%;height:100%;opacity:0.28;"></canvas>
+  <div class="i-scan"></div>
+  <div class="i-wrap">
+    <div class="i-term" id="intro-terminal"></div>
+    <div class="i-prog"><div class="i-bar"></div></div>
+    <div class="i-logo"><span class="lr">EL</span> <span class="lg">FLA7EN</span></div>
+    <div class="i-sub">Elite Cyber Security Unit</div>
+    <div class="i-loc">📍 Luxor — Egypt</div>
+    <div class="i-access">[ ACCESS GRANTED ]</div>
+  </div>
+  <div class="i-skip" id="intro-skip">SKIP ▶</div>
+</div>
+
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">EL<span class="sep">_</span>FLA7EN<span class="lx">://SEC</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="team.html">Team</a></li>
+    <li><a href="legendary.html">Legendary</a></li>
+    <li><a href="writeups.html" class="active">Writeups</a></li>
+    <li><a href="achievements.html">Achievements</a></li>
+    <li><a href="https://wa.me/201225346232" target="_blank" class="nav-join">⚡ JOIN EL FLA7EN</a></li>
+  </ul>
+  <button class="nav-toggle"><span></span><span></span><span></span></button>
+</nav>
+
+<main>
+  <div class="page-hero">
+    <div class="pg-grid"></div>
+    <h1 class="pg-title">CYBER <span class="hc">WRITEUPS</span></h1>
+    <p class="pg-sub">// SOLUTIONS // METHODOLOGIES // KNOWLEDGE BASE //</p>
+    <div class="pg-line"></div>
+  </div>
+
+  <section class="section" style="padding-top:1.5rem;">
+    <div class="section-inner">
+
+      <!-- Terminal FS view -->
+      <div style="max-width:750px;margin:0 auto 2.5rem;" class="reveal">
+        <div class="terminal">
+          <div class="t-bar">
+            <div class="t-dot"></div><div class="t-dot"></div><div class="t-dot"></div>
+            <span class="t-ttl">writeup_library.sh — EL FLA7EN knowledge base</span>
+          </div>
+          <div class="t-body">
+            <div><span class="t-prompt">operator@elfla7en:~$ </span><span class="t-cmd">ls -la ./writeups/</span></div>
+            <span class="t-out" style="color:var(--g);">drwxr-xr-x  digital-forensics/  <span style="color:var(--dim);">[ 2 files ]</span></span>
+            <span class="t-out" style="color:var(--r);">drwxr-xr-x  web-security/       <span style="color:var(--dim);">[ 2 files ]</span></span>
+            <span class="t-out" style="color:var(--cyan);">drwxr-xr-x  osint/              <span style="color:var(--dim);">[ 1 file  ]</span></span>
+            <span class="t-out" style="color:var(--b3);">drwxr-xr-x  steganography/      <span style="color:var(--dim);">[ 1 file  ]</span></span>
+            <span class="t-out">STATUS: <span class="t-ok">LIBRARY ACTIVE — MORE INCOMING</span></span>
+            <div><span class="t-prompt">operator@elfla7en:~$ </span><span class="t-cmd">_</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Featured -->
+      <div class="wr-feat reveal">
+        <div class="wr-feat-badge">★ FEATURED</div>
+        <div>
+          <span class="wr-badge wb-c">Digital Forensics</span>
+          <span class="d-h wr-diff" style="margin-left:0.5rem;">HARD</span>
+          <h3>AC3 CTF — Memory Forensics Deep Dive</h3>
+          <p>Complete walkthrough of the AC3 CTF memory forensics challenge. Covers Volatility3 process analysis, network connection artifacts, credential extraction, and timeline reconstruction from a Windows memory image.</p>
+          <div class="wr-tags">
+            <span class="wr-tag">Volatility3</span>
+            <span class="wr-tag">Memory Analysis</span>
+            <span class="wr-tag">Windows DFIR</span>
+            <span class="wr-tag">AC3 CTF</span>
+          </div>
+        </div>
+        <div>
+          <a href="#" class="btn btn-g" style="font-size:0.72rem;padding:10px 22px;white-space:nowrap;">&gt; Read Writeup</a>
+        </div>
+      </div>
+
+      <!-- Filters -->
+      <div class="filter-row reveal">
+        <button class="fb active">All</button>
+        <button class="fb">Forensics</button>
+        <button class="fb">Web Security</button>
+        <button class="fb">OSINT</button>
+        <button class="fb">Steganography</button>
+        <button class="fb">Crypto</button>
+      </div>
+
+      <div class="wr-grid">
+
+        <div class="wr-card reveal" style="--wc:#00ff9c;">
+          <div class="wr-hd"><span class="wr-badge wb-g">Digital Forensics</span><span class="wr-num">#001</span></div>
+          <div class="wr-body">
+            <div class="d-h wr-diff">HARD</div>
+            <div class="wr-title">Wireshark Network Traffic Analysis</div>
+            <p class="wr-desc">Analyzing a suspicious PCAP to extract credentials, identify C2 communication, and reconstruct a data exfiltration scenario.</p>
+            <div class="wr-tags"><span class="wr-tag">Wireshark</span><span class="wr-tag">PCAP</span><span class="wr-tag">Network</span></div>
+          </div>
+          <div class="wr-ft"><span class="wr-date">2024</span><a href="#" class="wr-read">&gt; Read</a></div>
+        </div>
+
+        <div class="wr-card reveal" style="--wc:#ff2244;">
+          <div class="wr-hd"><span class="wr-badge wb-r">Web Security</span><span class="wr-num">#002</span></div>
+          <div class="wr-body">
+            <div class="d-m wr-diff">MEDIUM</div>
+            <div class="wr-title">SQL Injection — Blind Boolean-Based</div>
+            <p class="wr-desc">Blind SQLi exploitation step-by-step. Detection, manual payload crafting, and automation using SQLMap to extract database contents.</p>
+            <div class="wr-tags"><span class="wr-tag">SQLi</span><span class="wr-tag">SQLMap</span><span class="wr-tag">Web</span></div>
+          </div>
+          <div class="wr-ft"><span class="wr-date">2024</span><a href="#" class="wr-read">&gt; Read</a></div>
+        </div>
+
+        <div class="wr-card reveal" style="--wc:#00f0ff;">
+          <div class="wr-hd"><span class="wr-badge wb-c">OSINT</span><span class="wr-num">#003</span></div>
+          <div class="wr-body">
+            <div class="d-m wr-diff">MEDIUM</div>
+            <div class="wr-title">Geo-Location CTF Challenge</div>
+            <p class="wr-desc">Image metadata, reverse image search, and shadow angle analysis to pinpoint a photo location within 10 meters in a CTF scenario.</p>
+            <div class="wr-tags"><span class="wr-tag">OSINT</span><span class="wr-tag">Geo</span><span class="wr-tag">Metadata</span></div>
+          </div>
+          <div class="wr-ft"><span class="wr-date">2024</span><a href="#" class="wr-read">&gt; Read</a></div>
+        </div>
+
+        <div class="wr-card reveal" style="--wc:#8844ff;">
+          <div class="wr-hd"><span class="wr-badge wb-p">Steganography</span><span class="wr-num">#004</span></div>
+          <div class="wr-body">
+            <div class="d-m wr-diff">MEDIUM</div>
+            <div class="wr-title">Image Steganography — LSB Extraction</div>
+            <p class="wr-desc">Hidden flag extraction from PNG images using LSB steganography, ExifTool, binwalk, and custom Python scripts for multi-layer analysis.</p>
+            <div class="wr-tags"><span class="wr-tag">Stego</span><span class="wr-tag">binwalk</span><span class="wr-tag">Python</span></div>
+          </div>
+          <div class="wr-ft"><span class="wr-date">2024</span><a href="#" class="wr-read">&gt; Read</a></div>
+        </div>
+
+        <div class="wr-card reveal" style="--wc:#3a6aff;">
+          <div class="wr-hd"><span class="wr-badge wb-b">Web Security</span><span class="wr-num">#005</span></div>
+          <div class="wr-body">
+            <div class="d-h wr-diff">HARD</div>
+            <div class="wr-title">SSRF + IDOR Attack Chain</div>
+            <p class="wr-desc">Complex attack chain combining Server-Side Request Forgery and IDOR to achieve privilege escalation and internal resource access.</p>
+            <div class="wr-tags"><span class="wr-tag">SSRF</span><span class="wr-tag">IDOR</span><span class="wr-tag">Burp</span></div>
+          </div>
+          <div class="wr-ft"><span class="wr-date">2024</span><a href="#" class="wr-read">&gt; Read</a></div>
+        </div>
+
+        <div class="coming reveal">
+          <div style="font-size:1.2rem;margin-bottom:0.8rem;">[ ░░░░ MORE INCOMING ░░░░ ]</div>
+          <div>MORE WRITEUPS BEING PREPARED — STAY TUNED</div>
+          <div style="margin-top:0.5rem;color:rgba(255,34,68,0.2);">// NEXT: UPCOMING CTF SEASON</div>
+        </div>
+
+      </div>
+
+      <div class="cta reveal" style="margin-top:3rem;">
+        <div class="cta-title">BUILD THE <span class="cg">LIBRARY</span></div>
+        <p class="cta-sub">Join EL FLA7EN and contribute to our security knowledge base</p>
+        <a href="https://wa.me/201225346232" target="_blank" class="btn btn-wa" style="font-size:0.85rem;padding:13px 34px;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          JOIN EL FLA7EN — Contact Leader on WhatsApp
+        </a>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span class="ft-logo">EL_FLA7EN://SEC</span>
+  <div class="ft-divider"></div>
+  <span class="ft-copy">© 2024 EL FLA7EN Cyber Security Team — FCI LUXOR, EGYPT</span>
+  <span class="ft-credit">web made by gerges adel</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

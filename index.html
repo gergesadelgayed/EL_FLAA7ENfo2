@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EL FLA7EN | Elite Cyber Security Unit</title>
+  <meta name="description" content="EL FLA7EN — Elite Cyber Security Team. CTF | DFIR | Web Security | OSINT. Luxor, Egypt.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="cursor"></div>
+<div id="cursor-dot"></div>
+
+<!-- BG layers -->
+<canvas id="bgCanvas" style="position:fixed;inset:0;pointer-events:none;z-index:0;opacity:0.32;width:100%;height:100%;"></canvas>
+
+<!-- ===== INTRO (first visit only) ===== -->
+<div id="intro">
+  <div class="i-scanbar"></div>
+  <canvas id="intro-mat" style="position:absolute;inset:0;width:100%;height:100%;opacity:0.28;"></canvas>
+  <div class="i-scan"></div>
+  <div class="i-wrap">
+    <div class="i-term" id="intro-terminal"></div>
+    <div class="i-prog"><div class="i-bar"></div></div>
+    <div class="i-logo">
+      <span class="lr">EL</span> <span class="lg">FLA7EN</span>
+    </div>
+    <div class="i-sub">Elite Cyber Security Unit</div>
+    <div class="i-loc">📍 Luxor — Egypt</div>
+    <div class="i-access">[ ACCESS GRANTED ]</div>
+  </div>
+  <div class="i-skip" id="intro-skip">SKIP ▶</div>
+</div>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">EL<span class="sep">_</span>FLA7EN<span class="lx">://SEC</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="team.html">Team</a></li>
+    <li><a href="legendary.html">Legendary</a></li>
+    <li><a href="writeups.html">Writeups</a></li>
+    <li><a href="achievements.html">Achievements</a></li>
+    <li>
+      <a href="https://wa.me/201225346232" target="_blank" class="nav-join">
+        ⚡ JOIN EL FLA7EN
+      </a>
+    </li>
+  </ul>
+  <button class="nav-toggle"><span></span><span></span><span></span></button>
+</nav>
+
+<main>
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-radial"></div>
+    <canvas id="particleCanvas" style="position:absolute;inset:0;pointer-events:none;z-index:1;width:100%;height:100%;"></canvas>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="eg">//</span>
+        <span class="em"> CYBER SECURITY UNIT </span>
+        <span class="er">|</span>
+        <span class="em"> FCI LUXOR </span>
+        <span class="er">|</span>
+        <span class="em"> EGYPT </span>
+        <span class="eg">//</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="ht-el glitch" data-text="EL">EL</span>
+        <span><span class="ht-fla">FLA</span><span class="ht-7en">7EN</span></span>
+      </h1>
+      <p class="hero-sub">Elite Cyber Security Team</p>
+      <p class="hero-loc">📍 Luxor – Egypt</p>
+      <div class="hero-stats">
+        <div class="h-stat"><span class="h-num counter" data-target="6">0</span><span class="h-label">Team Members</span></div>
+        <div class="h-stat"><span class="h-num counter" data-target="30">0</span><span class="h-label">CTF Missions</span></div>
+        <div class="h-stat"><span class="h-num counter" data-target="8">0</span><span class="h-label">Cyber Ops</span></div>
+        <div class="h-stat"><span class="h-num counter" data-target="5">0</span><span class="h-label">Achievements</span></div>
+      </div>
+      <div class="hero-btns">
+        <a href="team.html" class="btn btn-g">&gt; Meet The Unit</a>
+        <a href="achievements.html" class="btn btn-r">&gt; Our Missions</a>
+        <a href="https://wa.me/201225346232" target="_blank" class="btn btn-wa">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Join EL FLA7EN
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="s-head reveal">
+        <span class="s-tag tg">// About The Unit</span>
+        <h2 class="s-title">Who We <span class="hg">Are</span></h2>
+        <div class="s-line"></div>
+      </div>
+      <div style="max-width:800px;margin:0 auto;" class="reveal">
+        <div class="terminal">
+          <div class="t-bar">
+            <div class="t-dot"></div><div class="t-dot"></div><div class="t-dot"></div>
+            <span class="t-ttl">elfla7en_unit.sh — secure terminal v3</span>
+          </div>
+          <div class="t-body">
+            <div><span class="t-prompt">operator@elfla7en:~$ </span><span class="t-cmd">cat unit_profile.txt</span></div>
+            <span class="t-out">UNIT NAME   : EL FLA7EN Cyber Security Team</span>
+            <span class="t-out">BASE        : Faculty of Computers &amp; Information — Luxor University</span>
+            <span class="t-out">DOMAINS     : DFIR | Web Security | OSINT | CTF</span>
+            <span class="t-out">LOCATION    : Luxor — Egypt 🇪🇬</span>
+            <span class="t-out">CLEARANCE   : <span class="t-ok">ACTIVE ██████████ 100% ONLINE</span></span>
+            <span class="t-muted">---</span>
+            <span class="t-out">MISSION     : Build elite cyber operators through competitive CTF,</span>
+            <span class="t-out">              real-world DFIR training, and knowledge sharing.</span>
+            <span class="t-out">PHILOSOPHY  : <span class="t-ok">Security is not a product — it is a mindset.</span></span>
+            <span class="t-muted">---</span>
+            <div><span class="t-prompt">operator@elfla7en:~$ </span><span class="t-cmd">_</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CAPABILITIES ===== -->
+  <section class="section sect-alt">
+    <div class="section-inner">
+      <div class="s-head reveal">
+        <span class="s-tag tr">// Operational Domains</span>
+        <h2 class="s-title">What We <span class="hr">Operate</span></h2>
+        <div class="s-line"></div>
+      </div>
+      <div class="feat-grid">
+        <div class="feat reveal" style="--fc:#00ff9c;"><span class="feat-icon">🔬</span><div class="feat-title">Digital Forensics</div><p class="feat-desc">Memory analysis, disk forensics, network packet investigation, and digital evidence recovery using industry-standard DFIR tools and methodology.</p></div>
+        <div class="feat reveal" style="--fc:#00f0ff;"><span class="feat-icon">🌐</span><div class="feat-title">Web Security</div><p class="feat-desc">SQL injection, XSS, SSRF, IDOR, and advanced web exploitation techniques applied in real CTF environments and structured lab scenarios.</p></div>
+        <div class="feat reveal" style="--fc:#3a6aff;"><span class="feat-icon">🔍</span><div class="feat-title">OSINT</div><p class="feat-desc">Open-source intelligence gathering, target profiling, geo-location analysis, username enumeration, and social engineering research.</p></div>
+        <div class="feat reveal" style="--fc:#ff2244;"><span class="feat-icon">⚡</span><div class="feat-title">CTF Competitions</div><p class="feat-desc">Active participation in national and international CTF tournaments across Web, Forensics, Crypto, Pwn, OSINT, and Misc categories.</p></div>
+        <div class="feat reveal" style="--fc:#00ff66;"><span class="feat-icon">🛡️</span><div class="feat-title">Incident Response</div><p class="feat-desc">Threat hunting, log analysis, post-incident investigation, and full digital forensics timeline reconstruction methodologies.</p></div>
+        <div class="feat reveal" style="--fc:#4488ff;"><span class="feat-icon">📡</span><div class="feat-title">Security Research</div><p class="feat-desc">Vulnerability research, reverse engineering, malware analysis, and publishing technical writeups for the community.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta reveal">
+        <div class="cta-title"><span class="cr">JOIN</span> EL <span class="cg">FLA7EN</span></div>
+        <p class="cta-sub">Think you have what it takes? Contact the unit leader directly on WhatsApp.</p>
+        <a href="https://wa.me/201225346232" target="_blank" class="btn btn-wa" style="font-size:0.85rem;padding:14px 38px;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          JOIN EL FLA7EN — Contact Leader on WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span class="ft-logo">EL_FLA7EN://SEC</span>
+  <div class="ft-divider"></div>
+  <span class="ft-copy">© 2024 EL FLA7EN Cyber Security Team — FCI LUXOR, EGYPT</span>
+  <span class="ft-credit">web made by gerges adel</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

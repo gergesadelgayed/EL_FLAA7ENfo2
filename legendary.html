@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EL FLA7EN | Team Legendary</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .origin-block{background:linear-gradient(135deg,rgba(30,58,138,0.2),rgba(0,255,156,0.04));border:1px solid rgba(0,255,156,0.12);padding:2.5rem;position:relative;overflow:hidden;margin-bottom:3rem;}
+    .origin-block::before{content:'CLASSIFIED';position:absolute;top:14px;right:20px;font-family:var(--font-mono);font-size:0.55rem;color:rgba(255,34,68,0.25);letter-spacing:3px;}
+    .origin-num{font-family:var(--font-display);font-size:7rem;font-weight:900;color:rgba(0,255,156,0.03);position:absolute;bottom:-20px;right:10px;line-height:1;pointer-events:none;}
+    .origin-tag{font-family:var(--font-mono);font-size:0.62rem;letter-spacing:5px;margin-bottom:1rem;display:block;}
+    .origin-title{font-family:var(--font-display);font-size:1.4rem;color:#fff;letter-spacing:3px;margin-bottom:1rem;}
+    .origin-text{font-size:0.78rem;color:var(--dim);line-height:2.1;max-width:720px;}
+  </style>
+</head>
+<body>
+
+<div id="cursor"></div>
+<div id="cursor-dot"></div>
+<canvas id="bgCanvas" style="position:fixed;inset:0;pointer-events:none;z-index:0;opacity:0.28;width:100%;height:100%;"></canvas>
+
+<div id="intro">
+  <div class="i-scanbar"></div>
+  <canvas id="intro-mat" style="position:absolute;inset:0;width:100%;height:100%;opacity:0.28;"></canvas>
+  <div class="i-scan"></div>
+  <div class="i-wrap">
+    <div class="i-term" id="intro-terminal"></div>
+    <div class="i-prog"><div class="i-bar"></div></div>
+    <div class="i-logo"><span class="lr">EL</span> <span class="lg">FLA7EN</span></div>
+    <div class="i-sub">Elite Cyber Security Unit</div>
+    <div class="i-loc">📍 Luxor — Egypt</div>
+    <div class="i-access">[ ACCESS GRANTED ]</div>
+  </div>
+  <div class="i-skip" id="intro-skip">SKIP ▶</div>
+</div>
+
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">EL<span class="sep">_</span>FLA7EN<span class="lx">://SEC</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="team.html">Team</a></li>
+    <li><a href="legendary.html" class="active">Legendary</a></li>
+    <li><a href="writeups.html">Writeups</a></li>
+    <li><a href="achievements.html">Achievements</a></li>
+    <li><a href="https://wa.me/201225346232" target="_blank" class="nav-join">⚡ JOIN EL FLA7EN</a></li>
+  </ul>
+  <button class="nav-toggle"><span></span><span></span><span></span></button>
+</nav>
+
+<main>
+  <div class="page-hero">
+    <div class="pg-grid"></div>
+    <h1 class="pg-title">TEAM <span class="hg">LEGENDARY</span></h1>
+    <p class="pg-sub">// ORIGIN // DOCTRINE // MISSION // PHILOSOPHY //</p>
+    <div class="pg-line"></div>
+  </div>
+
+  <section class="section" style="padding-top:1.5rem;">
+    <div class="section-inner">
+
+      <div class="origin-block reveal">
+        <div class="origin-num">01</div>
+        <span class="origin-tag" style="color:var(--cyan);">// UNIT ORIGIN — CLASSIFIED BRIEF</span>
+        <div class="origin-title">The Birth of EL FLA7EN</div>
+        <p class="origin-text">
+          EL FLA7EN was forged at the Faculty of Computers & Information, Luxor University, Egypt.
+          Six cyber security enthusiasts — united by ambition and driven by a shared desire to master the digital battlefield — built this unit from scratch.
+          <br><br>
+          The name "FLA7EN" — meaning "farmers" in Arabic — is a declaration: we cultivate knowledge, harvest skills, and plant the seeds of a stronger security culture in Egypt.
+          We do not merely solve CTF challenges. <strong style="color:var(--g);">We build operators.</strong>
+        </p>
+      </div>
+
+      <!-- Philosophy -->
+      <div class="s-head reveal">
+        <span class="s-tag tg">// Unit Doctrine</span>
+        <h2 class="s-title">Core <span class="hr">Philosophy</span></h2>
+        <div class="s-line"></div>
+      </div>
+
+      <div class="phi-grid">
+        <div class="phi reveal" style="--pc:#00ff9c;"><span class="phi-icon">🎯</span><div class="phi-title">Precision</div><p class="phi-text">Every attack vector analyzed. Every vulnerability methodically assessed. We operate with surgical precision.</p></div>
+        <div class="phi reveal" style="--pc:#ff2244;"><span class="phi-icon">🔥</span><div class="phi-title">Resilience</div><p class="phi-text">Failure is intelligence. Every setback teaches us more about the systems we are trying to understand.</p></div>
+        <div class="phi reveal" style="--pc:#00f0ff;"><span class="phi-icon">🤝</span><div class="phi-title">Brotherhood</div><p class="phi-text">We elevate each other. Knowledge shared is power multiplied. No operator is left behind.</p></div>
+        <div class="phi reveal" style="--pc:#3a6aff;"><span class="phi-icon">🛡️</span><div class="phi-title">Integrity</div><p class="phi-text">Ethical hacking only. Legal boundaries respected. We hack to protect — never to destroy.</p></div>
+        <div class="phi reveal" style="--pc:#00ff66;"><span class="phi-icon">📡</span><div class="phi-title">Innovation</div><p class="phi-text">The threat landscape evolves daily. We evolve faster. Constant research and adaptation is baseline.</p></div>
+        <div class="phi reveal" style="--pc:#4488ff;"><span class="phi-icon">⚡</span><div class="phi-title">Excellence</div><p class="phi-text">Good enough is never enough. We push for mastery in every domain we operate.</p></div>
+      </div>
+
+      <!-- Quotes -->
+      <div style="margin:3rem 0;" class="reveal">
+        <div class="quote-panel">
+          <div class="q-text">"Security is not a <span class="qr">product</span>,<br>it is a <span class="qg">mindset</span>."</div>
+          <span class="q-attr">— EL FLA7EN CYBER SECURITY TEAM // UNIT DOCTRINE</span>
+        </div>
+      </div>
+      <div style="margin:2rem 0 3rem;" class="reveal">
+        <div class="quote-panel" style="border-color:rgba(0,240,255,0.4) rgba(255,34,68,0.4);">
+          <div class="q-text" style="font-size:1.1rem;color:var(--dim);">"The hacker does not break systems.<br>The hacker <span class="qg">understands</span> them."</div>
+          <span class="q-attr">// UNIT CREED</span>
+        </div>
+      </div>
+
+      <!-- Ops Profile -->
+      <div class="s-head reveal">
+        <span class="s-tag tb">// Unit Status</span>
+        <h2 class="s-title">Operational <span class="hc">Profile</span></h2>
+        <div class="s-line"></div>
+      </div>
+
+      <div class="ops reveal">
+        <div class="ops-row">
+          <div class="ops-dot"></div>
+          <span class="ops-lbl">UNIT STATUS: ACTIVE AND FULLY OPERATIONAL</span>
+        </div>
+        <div class="ops-grid">
+          <div class="ops-item"><span class="ops-ilbl">Unit Name</span><div class="ops-ival og">EL FLA7EN</div></div>
+          <div class="ops-item"><span class="ops-ilbl">Classification</span><div class="ops-ival">CYBER SEC TEAM</div></div>
+          <div class="ops-item"><span class="ops-ilbl">Base</span><div class="ops-ival">FCI LUXOR — EGYPT</div></div>
+          <div class="ops-item"><span class="ops-ilbl">Established</span><div class="ops-ival">2024</div></div>
+          <div class="ops-item"><span class="ops-ilbl">Operators</span><div class="ops-ival og">6</div></div>
+          <div class="ops-item"><span class="ops-ilbl">Primary Domain</span><div class="ops-ival">DFIR / CTF</div></div>
+          <div class="ops-item"><span class="ops-ilbl">Unit Leader</span><div class="ops-ival">Gerges Adel</div></div>
+          <div class="ops-item"><span class="ops-ilbl">Threat Level</span><div class="ops-ival or">ELITE ██ RISING</div></div>
+        </div>
+      </div>
+
+      <div class="cta reveal" style="margin-top:2rem;">
+        <div class="cta-title">WRITE YOUR <span class="cg">LEGEND</span></div>
+        <p class="cta-sub">Join EL FLA7EN — become part of the story</p>
+        <a href="https://wa.me/201225346232" target="_blank" class="btn btn-wa" style="font-size:0.85rem;padding:13px 34px;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          JOIN EL FLA7EN — Contact Leader on WhatsApp
+        </a>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span class="ft-logo">EL_FLA7EN://SEC</span>
+  <div class="ft-divider"></div>
+  <span class="ft-copy">© 2024 EL FLA7EN Cyber Security Team — FCI LUXOR, EGYPT</span>
+  <span class="ft-credit">web made by gerges adel</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
